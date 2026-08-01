@@ -1,40 +1,13 @@
-const library=[
-    {
-        title:'the road ahead',
-        author:'bill gate',
-        status:{
-            own:true,
-            reading:true,
-            read:false,
-        },
-    },
-    {
-        title:'Steve jobs',
-        author:'walter Isaacson',
-        status:{
-            own:true,
-            reading:false,
-            read:false,
-        },
-    },
-    {
-        title:'Mocking jay',
-        author:'Suzzane Collins',
-        status:{
-            own:true,
-            reading:false,
-            read:false,
-        },
-    },
+//challenge 1
+let arr=[1,2,3,4,5];
+arr.reverse();
+arr.unshift(6);
+arr.push(0);
+console.log(arr);
 
-];
-
-library[0].status.read=true;
-library[1].status.read=true;
-library[2].status.read=true;
-
-const{title:firstbook}=library[0]
-console.log(firstbook);
-
-const libraryJSON=JSON.stringify(library);
-console.log(libraryJSON);
+//challenge 2
+let arr1=[1,2,3,4,5];
+let arr2=[5,6,7,8,9,10];
+let arr3=arr1.pop();
+arr3=arr1.concat(arr2);
+console.log(arr3);
